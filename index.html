@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>子恆运势 - 东西方玄学结合的专业运势分析</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+  <style>
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    }
+    .fortune-card {
+      transition: all 0.3s ease;
+    }
+    .fortune-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .testimonial-card {
+      transition: all 0.3s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+    .pricing-card {
+      transition: all 0.3s ease;
+    }
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .feature-card {
+      transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span class="ml-2 text-xl font-bold text-gray-900">子恆运势</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#features" class="text-gray-600 hover:text-purple-600 transition-colors">特色服务</a>
+          <a href="#how-it-works" class="text-gray-600 hover:text-purple-600 transition-colors">工作原理</a>
+          <a href="#testimonials" class="text-gray-600 hover:text-purple-600 transition-colors">用户评价</a>
+          <a href="#pricing" class="text-gray-600 hover:text-purple-600 transition-colors">服务价格</a>
+          <a href="#faq" class="text-gray-600 hover:text-purple-600 transition-colors">常见问题</a>
+        </nav>
+        <div class="flex items-center">
+          <button class="hidden md:block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+            立即测算
+          </button>
+          <button class="md:hidden text-gray-600" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-gray-50">特色服务</a>
+          <a href="#how-it-works" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-gray-50">工作原理</a>
+          <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-gray-50">用户评价</a>
+          <a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-gray-50">服务价格</a>
+          <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-gray-50">常见问题</a>
+          <button class="mt-2 w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+            立即测算
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="星空背景" class="w-full h-full object-cover opacity-20">
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          探索你的命运轨迹，<span class="text-purple-600">掌握人生方向</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8">
+          结合东方玄学、紫微斗数、易经与西方星座学，为您提供专业、精准的运势分析
+        </p>
+        <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 md:p-8 max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">开始你的运势测算</h2>
+          <form id="fortune-form" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">您的姓名</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <label for="birth-year" class="block text-sm font-medium text-gray-700 mb-1">出生年份</label>
+                <select id="birth-year" name="birth-year" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                  <option value="">选择年份</option>
+                </select>
+              </div>
+              <div>
+                <label for="birth-month" class="block text-sm font-medium text-gray-700 mb-1">出生月份</label>
+                <select id="birth-month" name="birth-month" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                  <option value="">选择月份</option>
+                  <option value="1">1月</option>
+                  <option value="2">2月</option>
+                  <option value="3">3月</option>
+                  <option value="4">4月</option>
+                  <option value="5">5月</option>
+                  <option value="6">6月</option>
+                  <option value="7">7月</option>
+                  <option value="8">8月</option>
+                  <option value="9">9月</option>
+                  <option value="10">10月</option>
+                  <option value="11">11月</option>
+                  <option value="12">12月</option>
+                </select>
+              </div>
+              <div>
+                <label for="birth-day" class="block text-sm font-medium text-gray-700 mb-1">出生日期</label>
+                <select id="birth-day" name="birth-day" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                  <option value="">选择日期</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="gender" class="block text-sm font-medium text-gray-700 mb-1">性别</label>
+              <div class="flex space-x-4">
+                <label class="inline-flex items-center">
+                  <input type="radio" name="gender" value="male" class="form-radio text-purple-600" checked>
+                  <span class="ml-2">男</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="gender" value="female" class="form-radio text-purple-600">
+                  <span class="ml-2">女</span>
+                </label>
+              </div>
+            </div>
+            <button type="button" id="calculate-button" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-colors text-lg">
+              立即测算我的运势
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fortune Result Modal -->
+  <div id="fortune-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+      </div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+              <h3 class="text-2xl leading-6 font-bold text-gray-900 mb-4" id="modal-title">
+                您的运势分析结果
+              </h3>
+              <div class="mt-4 space-y-6">
+                <div class="bg-purple-50 rounded-lg p-4 flex items-center justify-between">
+                  <div>
+                    <h4 class="text-lg font-medium text-purple-800">今日运势评级</h4>
+                    <p class="text-3xl font-bold text-purple-600" id="fortune-rating">★★★★☆</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium text-purple-800">运势分数</h4>
+                    <p class="text-3xl font-bold text-purple-600" id="fortune-score">85</p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-medium text-gray-900 mb-2">运势概述</h4>
+                  <p class="text-gray-700" id="fortune-overview">今日整体运势良好，事业上有贵人相助，财运稳定，但感情方面需要多加注意沟通。</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-green-50 rounded-lg p-4">
+                    <h4 class="text-lg font-medium text-green-800 mb-2">今日宜</h4>
+                    <ul class="list-disc list-inside text-green-700 space-y-1" id="fortune-good">
+                      <li>谈判签约</li>
+                      <li>投资理财</li>
+                      <li>外出旅行</li>
+                      <li>学习进修</li>
+                    </ul>
+                  </div>
+                  <div class="bg-red-50 rounded-lg p-4">
+                    <h4 class="text-lg font-medium text-red-800 mb-2">今日忌</h4>
+                    <ul class="list-disc list-inside text-red-700 space-y-1" id="fortune-bad">
+                      <li>冲动消费</li>
+                      <li>激烈争执</li>
+                      <li>重大决策</li>
+                      <li>熬夜加班</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-medium text-gray-900 mb-2">运势分析</h4>
+                  <p class="text-gray-700" id="fortune-analysis">根据您的八字命盘和紫微斗数分析，您今日的财运受到"文曲星"的影响，适合进行投资理财活动。同时，"天机星"入命，思维敏捷，是学习新知识的好时机。感情方面，受"七杀星"影响，易产生口舌之争，建议保持冷静，避免不必要的争执。</p>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-medium text-gray-900 mb-2">开运建议</h4>
+                  <p class="text-gray-700" id="fortune-advice">今日宜佩戴绿色或蓝色饰品，有助于增强财运；办公桌可摆放向日葵或绿植，提升工作运势；避免穿着红色或紫色衣物，以免引发口舌是非；晚上可点一盏温和的灯，有助于稳定情绪，改善睡眠。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+          <button type="button" id="close-modal" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-purple-600 text-base font-medium text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-3 sm:w-auto sm:text-sm">
+            关闭
+          </button>
+          <button type="button" id="save-result" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+            保存结果
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">专业运势分析服务</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          我们结合东方玄学与西方星座学，为您提供全方位的运势分析
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="feature-card bg-white rounded-xl shadow-md p-6 text-center">
+          <div class="w-16 h-16 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">紫微斗数</h3>
+          <p class="text-gray-600">
+            基于出生年月日时，分析命盘中的星曜组合，揭示您的人生轨迹与潜能
+          </p>
+        </div>
+        <div class="feature-card bg-white rounded-xl shadow-md p-6 text-center">
+          <div class="w-16 h-16 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">八字命理</h3>
+          <p class="text-gray-600">
+            通过天干地支分析您的先天命格，预测运势变化与吉凶祸福
+          </p>
+        </div>
+        <div class="feature-card bg-white rounded-xl shadow-md p-6 text-center">
+          <div class="w-16 h-16 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+              <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+              <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+              <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+              <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+              <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">西方星座</h3>
+          <p class="text-gray-600">
+            结合西方占星学，分析星座特质与行星位置，解读您的性格与命运
+          </p>
+        </div>
+        <div class="feature-card bg-white rounded-xl shadow-md p-6 text-center">
+          <div class="w-16 h-16 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">易经卦象</h3>
+          <p class="text-gray-600">
+            通过六十四卦的变化，洞察事物发展规律，指导您的人生决策
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">我们如何为您分析运势</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          专业的运势分析流程，结合多种玄学体系，为您提供精准的运势预测
+        </p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-0 md:left-1/2 top-0 h-full w-px bg-purple-200 transform md:translate-x-0 translate-x-4"></div>
+          
+          <!-- Step 1 -->
+          <div class="relative mb-12 md:mb-16">
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">收集个人信息</h3>
+                <p class="text-gray-600">
+                  通过您提供的姓名、出生年月日等信息，建立您的个人命盘基础数据
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-start md:justify-center order-1 md:order-2 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold z-10">1</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="relative mb-12 md:mb-16">
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="md:w-1/2 flex justify-start md:justify-center order-1 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold z-10">2</div>
+              </div>
+              <div class="md:w-1/2 md:pl-8 order-2">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">紫微斗数分析</h3>
+                <p class="text-gray-600">
+                  根据您的出生信息，排列紫微斗数命盘，分析十二宫位与星曜组合
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="relative mb-12 md:mb-16">
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">八字命理解读</h3>
+                <p class="text-gray-600">
+                  计算您的四柱八字，分析五行强弱，预测流年运势变化
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-start md:justify-center order-1 md:order-2 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold z-10">3</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="relative mb-12 md:mb-16">
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="md:w-1/2 flex justify-start md:justify-center order-1 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold z-10">4</div>
+              </div>
+              <div class="md:w-1/2 md:pl-8 order-2">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">星座与行星解析</h3>
+                <p class="text-gray-600">
+                  结合西方占星学，分析您的星座特质与当前行星位置对您的影响
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Step 5 -->
+          <div class="relative">
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="md:w-1/2 md:pr-8 md:text-right order-2 md:order-1">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">综合运势报告</h3>
+                <p class="text-gray-600">
+                  整合多种分析结果，生成详细的运势报告，包括运势评级、宜忌事项与开运建议
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-start md:justify-center order-1 md:order-2 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold z-10">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">用户真实评价</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          听听我们的用户如何评价子恆运势分析服务
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="testimonial-card bg-gray-50 rounded-xl shadow-sm p-6">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80" alt="用户头像" class="w-12 h-12 rounded-full object-cover">
+            <div class="ml-4">
+              <h4 class="text-lg font-bold text-gray-900">李小姐</h4>
+              <div class="flex text-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "子恆运势的分析非常准确！按照建议调整了办公桌的位置，工作上果然遇到了贵人相助。运势报告详细且有理有据，不像其他算命那样模棱两可。"
+          </p>
+        </div>
+        <div class="testimonial-card bg-gray-50 rounded-xl shadow-sm p-6">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80" alt="用户头像" class="w-12 h-12 rounded-full object-cover">
+            <div class="ml-4">
+              <h4 class="text-lg font-bold text-gray-900">王先生</h4>
+              <div class="flex text-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "最初抱着怀疑的态度尝试，没想到分析结果如此精准！报告中提到我适合在特定日期谈判，我按照建议行事，成功签下了一个重要合同。子恆运势确实有独到之处。"
+          </p>
+        </div>
+        <div class="testimonial-card bg-gray-50 rounded-xl shadow-sm p-6">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80" alt="用户头像" class="w-12 h-12 rounded-full object-cover">
+            <div class="ml-4">
+              <h4 class="text-lg font-bold text-gray-900">张女士</h4>
+              <div class="flex text-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "子恆运势的分析帮我避开了几次潜在的风险。报告中的'今日忌'部分特别有用，让我能够提前规避问题。分析报告既有东方的玄学智慧，又结合了西方的科学分析，非常全面。"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">选择适合您的服务</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          我们提供多种运势分析服务，满足您不同的需求
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="pricing-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">基础运势</h3>
+            <p class="text-gray-600 mb-4">适合初次尝试的用户</p>
+            <div class="flex items-baseline mb-6">
+              <span class="text-4xl font-bold text-gray-900">¥39</span>
+              <span class="text-gray-500 ml-2">/次</span>
+            </div>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">基础运势评级</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">今日宜忌分析</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">简易开运建议</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+                <span>详细运势分析</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+                <span>专业咨询服务</span>
+              </li>
+            </ul>
+            <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors">
+              选择此套餐
+            </button>
+          </div>
+        </div>
+        <div class="pricing-card bg-white rounded-xl shadow-xl overflow-hidden transform scale-105 z-10">
+          <div class="bg-purple-600 text-white text-center py-2">
+            <span class="text-sm font-medium">最受欢迎</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">专业运势</h3>
+            <p class="text-gray-600 mb-4">适合需要详细分析的用户</p>
+            <div class="flex items-baseline mb-6">
+              <span class="text-4xl font-bold text-gray-900">¥99</span>
+              <span class="text-gray-500 ml-2">/次</span>
+            </div>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">详细运势评级</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">全面宜忌分析</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">详细开运建议</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">紫微斗数分析</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+                <span>一对一咨询</span>
+              </li>
+            </ul>
+            <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+              选择此套餐
+            </button>
+          </div>
+        </div>
+        <div class="pricing-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">尊享运势</h3>
+            <p class="text-gray-600 mb-4">适合需要深度解析的用户</p>
+            <div class="flex items-baseline mb-6">
+              <span class="text-4xl font-bold text-gray-900">¥199</span>
+              <span class="text-gray-500 ml-2">/次</span>
+            </div>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">高级运势评级</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">全面宜忌分析</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">个性化开运方案</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">紫微斗数详解</span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-600">30分钟一对一咨询</span>
+              </li>
+            </ul>
+            <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors">
+              选择此套餐
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">常见问题</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          关于子恆运势分析服务的常见问题解答
+        </p>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">运势分析的准确性如何？</h3>
+          <p class="text-gray-600">
+            子恆运势分析结合了东方玄学（紫微斗数、八字命理、易经）与西方占星学，通过多维度分析提高准确性。我们的分析师拥有多年经验，能够提供专业、精准的运势解读。根据用户反馈，我们的准确率在85%以上。
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">如何获取更详细的运势分析？</h3>
+          <p class="text-gray-600">
+            您可以选择我们的专业运势或尊享运势套餐，这些套餐提供更为详尽的分析报告。尊享运势套餐还包含30分钟的一对一咨询服务，我们的专业分析师将为您解答疑问，并提供个性化的开运建议。
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">运势分析需要提供哪些信息？</h3>
+          <p class="text-gray-600">
+            基础分析只需要您的姓名和出生年月日。如果您选择更高级的套餐，我们可能会询问出生时辰以提供更精准的紫微斗数分析。所有信息都将严格保密，仅用于运势分析。
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">运势分析多久更新一次？</h3>
+          <p class="text-gray-600">
+            我们提供日运、月运和年运分析。日运每天更新，月运每月更新，年运每年更新。您可以根据自己的需求选择不同周期的运势分析服务。
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">如何理解运势报告中的专业术语？</h3>
+          <p class="text-gray-600">
+            我们的运势报告会尽量使用通俗易懂的语言，但某些专业术语无法避免。报告中会附带简要解释，如果您有疑问，可以通过客服联系我们，或者选择包含咨询服务的套餐获取专业解答。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+            <span class="ml-2 text-xl font-bold">子恆运势</span>
+          </div>
+          <p class="text-gray-400 mb-4">
+            结合东方玄学与西方星座学，为您提供专业、精准的运势分析服务
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">快速链接</h3>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">特色服务</a></li>
+            <li><a href="#how-it-works" class="text-gray-400 hover:text-white transition-colors">工作原理</a></li>
+            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">用户评价</a></li>
+            <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">服务价格</a></li>
+            <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">常见问题</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">服务内容</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">紫微斗数</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">八字命理</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">西方星座</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">易经卦象</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">风水布局</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">联系我们</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <a href="mailto:zih48722@gmail.com" class="text-gray-400 hover:text-white transition-colors">zih48722@gmail.com</a>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-400">北京市朝阳区</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span class="text-gray-400">400-123-4567</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">© 2025 子恆运势. 版权所有.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Populate birth year select
+    const yearSelect = document.getElementById('birth-year');
+    const currentYear = new Date().getFullYear();
+    for (let year = currentYear - 80; year <= currentYear; year++) {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year + '年';
+      yearSelect.appendChild(option);
+    }
+
+    // Update days based on month and year
+    function updateDays() {
+      const year = parseInt(document.getElementById('birth-year').value) || new Date().getFullYear();
+      const month = parseInt(document.getElementById('birth-month').value) || 1;
+      const daySelect = document.getElementById('birth-day');
+      
+      // Clear existing options
+      daySelect.innerHTML = '<option value="">选择日期</option>';
+      
+      // Get number of days in the selected month
+      const daysInMonth = new Date(year, month, 0).getDate();
+      
+      // Add day options
+      for (let day = 1; day <= daysInMonth; day++) {
+        const option = document.createElement('option');
+        option.value = day;
+        option.textContent = day + '日';
+        daySelect.appendChild(option);
+      }
+    }
+
+    // Add event listeners to update days when month or year changes
+    document.getElementById('birth-month').addEventListener('change', updateDays);
+    document.getElementById('birth-year').addEventListener('change', updateDays);
+
+    // Initialize days
+    updateDays();
+
+    // Calculate button click handler
+    document.getElementById('calculate-button').addEventListener('click', function() {
+      const name = document.getElementById('name').value;
+      const birthYear = document.getElementById('birth-year').value;
+      const birthMonth = document.getElementById('birth-month').value;
+      const birthDay = document.getElementById('birth-day').value;
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      
+      // Validate form
+      if (!name || !birthYear || !birthMonth || !birthDay) {
+        alert('请填写完整信息');
+        return;
+      }
+      
+      // Generate fortune result (in a real app, this would call an API)
+      generateFortuneResult(name, birthYear, birthMonth, birthDay, gender);
+      
+      // Show modal
+      document.getElementById('fortune-modal').classList.remove('hidden');
+    });
+
+    // Close modal button
+    document.getElementById('close-modal').addEventListener('click', function() {
+      document.getElementById('fortune-modal').classList.add('hidden');
+    });
+
+    // Save result button
+    document.getElementById('save-result').addEventListener('click', function() {
+      alert('运势结果已保存！');
+    });
+
+    // Generate fortune result
+    function generateFortuneResult(name, year, month, day, gender) {
+      // In a real app, this would call an API to get the result
+      // For demo purposes, we'll generate a random result
+      
+      // Random rating (3-5 stars)
+      const ratingLevel = Math.floor(Math.random() * 3) + 3;
+      let ratingStars = '';
+      for (let i = 0; i < 5; i++) {
+        ratingStars += i < ratingLevel ? '★' : '☆';
+      }
+      document.getElementById('fortune-rating').textContent = ratingStars;
+      
+      // Random score (60-100)
+      const score = Math.floor(Math.random() * 41) + 60;
+      document.getElementById('fortune-score').textContent = score;
+      
+      // Overview based on score
+      let overview = '';
+      if (score >= 90) {
+        overview = '今日运势极佳，事业、财运、感情各方面都有良好表现，是适合大展宏图的一天。';
+      } else if (score >= 80) {
+        overview = '今日运势良好，事业上有贵人相助，财运稳定，但感情方面需要多加注意沟通。';
+      } else if (score >= 70) {
+        overview = '今日运势平稳，工作中可能遇到一些小挑战，但只要保持冷静就能顺利解决。';
+      } else {
+        overview = '今日运势一般，可能会遇到一些阻碍，建议低调行事，避免做重要决策。';
+      }
+      document.getElementById('fortune-overview').textContent = overview;
+      
+      // Good and bad things
+      const goodThings = [
+        '谈判签约', '投资理财', '外出旅行', '学习进修', '社交活动',
+        '求职面试', '开展新项目', '装修搬家', '购物消费', '健身锻炼'
+      ];
+      
+      const badThings = [
+        '冲动消费', '激烈争执', '重大决策', '熬夜加班', '高风险投资',
+        '借贷担保', '远途旅行', '医疗手术', '签订合同', '改变现状'
+      ];
+      
+      // Shuffle and pick random items
+      const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      };
+      
+      const goodCount = Math.floor(Math.random() * 3) + 3; // 3-5 items
+      const badCount = Math.floor(Math.random() * 3) + 2; // 2-4 items
+      
+      const selectedGood = shuffleArray([...goodThings]).slice(0, goodCount);
+      const selectedBad = shuffleArray([...badThings]).slice(0, badCount);
+      
+      // Update good and bad lists
+      document.getElementById('fortune-good').innerHTML = selectedGood.map(item => `<li>${item}</li>`).join('');
+      document.getElementById('fortune-bad').innerHTML = selectedBad.map(item => `<li>${item}</li>`).join('');
+      
+      // Generate analysis based on birth data
+      const zodiacSigns = ['水瓶座', '双鱼座', '白羊座', '金牛座', '双子座', '巨蟹座', '狮子座', '处女座', '天秤座', '天蝎座', '射手座', '摩羯座'];
+      const zodiacIndex = ((month - 1) + Math.floor(day / 15)) % 12;
+      const zodiacSign = zodiacSigns[zodiacIndex];
+      
+      const chineseZodiac = ['鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴', '鸡', '狗', '猪'];
+      const chineseZodiacIndex = (year - 1900) % 12;
+      const chineseZodiacSign = chineseZodiac[chineseZodiacIndex];
+      
+      const stars = ['天机星', '太阳星', '武曲星', '天同星', '廉贞星', '天府星', '太阴星', '贪狼星', '巨门星', '天相星', '天梁星', '七杀星', '破军星'];
+      const randomStar1 = stars[Math.floor(Math.random() * stars.length)];
+      const randomStar2 = stars[Math.floor(Math.random() * stars.length)];
+      
+      const analysis = `根据您的八字命盘和紫微斗数分析，作为${chineseZodiacSign}年出生的${zodiacSign}，您今日的运势受到"${randomStar1}"的影响，${selectedGood[0]}和${selectedGood[1]}都是不错的选择。同时，"${randomStar2}"入命，${score >= 80 ? '思维敏捷，是学习新知识的好时机' : '需要谨慎行事，避免冲动决策'}。${gender === 'male' ? '作为男性' : '作为女性'}，您今日的${score >= 80 ? '贵人方位在东南方' : '财运方位在西北方'}，可以多加留意。`;
+      
+      document.getElementById('fortune-analysis').textContent = analysis;
+      
+      // Generate advice
+      const colors = ['红色', '橙色', '黄色', '绿色', '蓝色', '紫色', '黑色', '白色', '金色', '银色'];
+      const luckyColor1 = colors[Math.floor(Math.random() * colors.length)];
+      let luckyColor2 = colors[Math.floor(Math.random() * colors.length)];
+      while (luckyColor2 === luckyColor1) {
+        luckyColor2 = colors[Math.floor(Math.random() * colors.length)];
+      }
+      
+      const unluckyColor = colors[Math.floor(Math.random() * colors.length)];
+      
+      const plants = ['向日葵', '绿萝', '富贵竹', '发财树', '仙人掌', '兰花', '玫瑰', '百合'];
+      const luckyPlant = plants[Math.floor(Math.random() * plants.length)];
+      
+      const advice = `今日宜佩戴${luckyColor1}或${luckyColor2}饰品，有助于增强${score >= 80 ? '财运' : '人缘'}；办公桌可摆放${luckyPlant}，提升工作运势；避免穿着${unluckyColor}衣物，以免引发口舌是非；${score >= 80 ? '晚上可点一盏温和的灯，有助于稳定情绪，改善睡眠' : '建议随身携带一些小零钱，可在路遇乞讨者时施舍，积累善缘'}。`;
+      
+      document.getElementById('fortune-advice').textContent = advice;
+    }
+  </script>
+</body>
+</html>
